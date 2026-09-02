@@ -1377,7 +1377,6 @@ nav .alta {
         #1d1d1d;
     display:
         flex;
-        flex-wrap: wrap-reverse;
     justify-content:
         space-between;
     line-height:
