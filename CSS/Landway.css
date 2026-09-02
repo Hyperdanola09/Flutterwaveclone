@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: black;
+}
+.back {
+  background-color: black;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  
+  background: #000;
+  display: flex;
+  padding:28px 90px;
+  
+}
+
+.logo {
+  
+  width: 145px;
+  height: auto;
+}
+ul li a{
+  
+  color: #ffffff;
+  font-size: 15px;
+  margin-right: 30px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:500;
+  text-decoration: none;
+  padding:10px 18px;
+  transition:.3s;
+}
+
+ul li {
+  display: flex;
+  position: relative;
+  
+  margin: 0;
+  color: white;
+}
+ul li{
+  gap: 2px;
+}
+
+ul {
+  
+  display: flex;
+  list-style:none;
+}
+
+.about {
+  
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.about p {
+  margin-top: 250px;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+.ov {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px;
+  
+}
+.left {
+  width: 40px;
+}
+
+.right {
+  width: 50%;
+}
+.left h2 {
+  font-size: 50px;
+  color: white;
+  font-weight: 90opx;
+}
+.right p {
+  font-size: 18px;
+  color: white;
+  line-height: 1.1;
+  max-width: 600px;
+}
+.vision {
+  background: white;
+  color: #333;
+  width: 90%;
+  margin: 80px auto;
+  padding: 60px;
+  text-align: center;
+  border-radius: 8px;
+  height: 230px;
+}
+.vision h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.vision p {
+  font-size: 25px;
+}
+
+.Review {
+  height: 30vh;
+  background: #333#156fe3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.circle {
+  width: 120px;
+  height: 70px;
+  background: white;
+  border-radius: 0 0 90px 90px;
+  
+}
+.Review h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+}
+.Review p {
+  color: white;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.three {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 120px;
+  background-color: black;
+}
+
+.lefty h3 {
+  font-size: 20px;
+  color: white;
+}
+.lefty h2 {
+  font-size: 90px;
+  color: #838181;
+}
+.lefty p {
+  color: white;
+}
+
+.middley h3 {
+  font-size: 20px;
+  color: white;
+}
+.middley h2 {
+  font-size: 90px;
+  color: #838181;
+}
+.middley p {
+  color: white;
+}
+
+.righty h3 {
+  font-size: 20px;
+  color: white;
+}
+.righty h2 {
+  font-size: 90px;
+  color: #838181;
+}
+.righty p {
+  color: white;
+}
+
+.word {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.word h1 {
+  font-size: 40px;
+}
+.word p {
+  font-size: 17px;
+}
+.word h2 {
+  font-size: 40px;
+}
+.word p {
+  font-size: 17px;
+}
+
+.img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.spirit h1 {
+  font-size: 15px;
+}
+.spiriy p {
+  font-size: 10px;
+}
+.spirit img {
+  width: 90px;
+}
+
+
+.we img {
+  width: 90px;
+}
+.we h1 {
+  font-size: 20px;
+}
+.we p {
+  font-size: 15px;
+}
+/* were */
+.were img {
+  width: 90px;
+}
+.were h1 {
+  font-size: 20px;
+}
+.were p {
+  font-size: 15px;
+}
+
+.honesty img {
+  width: 90px;
+}
+.honesty h1 {
+  font-size: 20px;
+}
+.honesty p {
+  font-size: 15px;
+}
+.title {
+  
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.title h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.afri {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  height: 350px;
+}
+.company img {
+  width: 100px;
+}
+.company h1 {
+  font-size: 20px;
+}
+.company p {
+  font-size: 15px;
+}
+.great img {
+  width: 100px;
+}
+.great h1 {
+  font-size: 20px;
+}
+.great p {
+  font-size: 15px;
+}
+
+.pro img {
+  width: 100px;
+}
+.pro h1 {
+  font-size: 20px;
+}
+.pro p {
+  font-size: 15px;
+}
+
+.you {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-color: black;
+}
+.text {
+  width: 50%;
+  margin-top: 300px;
+  margin-left: 120px;
+}
+.text h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+.text p {
+  color: white;
+}
+.video {
+  margin-right: 100px;
+  border-radius: 5px;
+  
+}
+video{
+  width: 500px;
+}
+.good {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+.good h1 {
+  font-size: 40px;
+}
+.good p {
+  font-size: 18px;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  height: 140px;
+}
+.fir img {
+  width: 160px;
+  margin-left: 300px;
+}
+.fir {
+  width: 50%;
+}
+.sec {
+  width: 50%;
+}
+.sec img {
+  width: 160px;
+  margin-right: 230px;
+}
+.bov {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.bov h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.one img {
+  width: 250px;
+}
+.two img {
+  width: 250px;
+}
+.nin img {
+  width: 250px;
+}
+.cow img {
+  width: 200px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 120px;
+  background-color: black;
+  color: white;
+}
+
+.add h1 {
+  font-size: 15px;
+  color: #838181;
+}
+.add h2 {
+  font-size: 15px;
+  color: #838181;
+}
+.add h3 {
+  font-size: 15px;
+  color: #838181;
+}
+.add h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feat h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.feat h1 {
+  font-size: 15px;
+  color: #838181;
+}
+.feat h2 {
+  font-size: 15px;
+  color: #838181;
+}
+.feat h3 {
+  font-size: 15px;
+  color: #838181;
+}
+
+.com h5 {
+  font-size: 15px;
+  color: #838181;
+}
+.com h1 {
+  font-size: 15px;
+  color: #838181;
+}
+.com h2 {
+  font-size: 15px;
+  color: #838181;
+}
+.com h3 {
+  font-size: 20px;
+}
+
+.social h1 {
+  font-size: 15px;
+  color: #838181;
+}
+.social h2 {
+  font-size: 15px;
+  color: #838181;
+}
+.social h3 {
+  font-size: 15px;
+  color: #838181;
+}
+.social h4 {
+  font-size: 15px;
+  color: #838181;
+}
+.social h5 {
+  font-size: 20px;
+}

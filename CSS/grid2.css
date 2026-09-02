@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 8vh 5vh 100vh 50vh;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "sidebar section"
+    "footer footer"
+    ;
+}
+header{
+    grid-area: header;
+    background-color: white;
+}
+nav{
+    grid-area: nav;
+    background-color: black;
+}
+aside{
+    grid-area: sidebar;
+    background-color: coral;
+}
+section{
+    grid-area: section;
+    background-color: rebeccapurple;
+}
+footer{
+    grid-area: footer;
+    background-color: black;
+}

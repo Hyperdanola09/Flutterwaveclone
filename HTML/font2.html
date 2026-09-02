@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonts</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 1000px;
+        }
+
+        .about {
+            font-family: "poppins", sans-serif;
+            font-size: 60px;
+            text-decoration: underline;
+        }
+
+        .lorem {
+            font-family: sans-serif;
+            font-style: italic;
+            font-weight: 700;
+            color: coral;
+            text-transform: capitalize;
+            text-shadow: 5px 5px 10px black;
+            text-indent: 40px;
+            text-decoration: line-through;
+            line-height: 30px;
+            letter-spacing: 40px;
+
+
+        }
+
+        .link {
+            text-decoration: none;
+            color: cornflowerblue;
+        }
+
+        .link:visited {
+            color: purple;
+        }
+
+        .ipsum {
+            word-spacing: 50px;
+            font-weight: 800;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-bottom: 20px;
+        }
+
+        .box:hover {
+            background-color: purple;
+            box-shadow: 5px 5px 15px green;
+            color: white;
+
+        }
+
+        .username {
+            margin: 0 0 20px 10px;
+            width: 300px;
+            height: 5vh;
+            border-radius: 10px;
+            padding: 4px;
+
+
+        }
+
+        .username:focus {
+
+            outline: 2px solid red;
+        }
+
+        button {
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+
+        button:focus {
+            background-color: green;
+            color: white;
+        }
+
+        .link:visited {
+            color: purple;
+
+        }
+
+        .link:link {
+            color: green;
+        }
+
+        section li:last-child {
+            color: red;
+        }
+
+        section li:first-child {
+            color: rebeccapurple;
+        }
+
+        section li:nth-child(3) {
+            color: green
+        }
+
+        .land {
+            width: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="ipsum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corrupti velit quaerat quos,
+        quis quasi ratione vero fugit dolore dicta voluptatibus impedit est ipsam sunt veniam dolorum quam! Itaque,
+        nihil?
+    </p>
+    <h1 class="about"> About us</h1>
+    <p class="lorem">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat beatae non laborum doloremque,
+        similique sequi ipsam. Minus ad mollitia sit consequuntur corrupti. Eligendi quasi laborum doloremque
+        accusantium,
+        aut et?
+    </p>
+    <a class="link" href="/HTML/boxmodel.html">box model</a>
+    <a class="link" href="/HTML/land.html">Home</a>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae soluta rerum voluptatum,
+        consequatur ab explicabo. Enim, repellendus aliquam!
+        Magni, sapiente ex? Modi, necessitatibus consequuntur perspiciatis deserunt atque reiciendis asperiores nam.
+    </div>
+    <input class="username" type="text">
+    <button>Click me</button>
+    <a class="link" href="/HTML/in.html">Businesslatter</a>
+    <section>
+        <ul>
+            <li>list item1</li>
+            <li>list item 21</li>
+            <li>list item 31</li>
+            <li>list item 41</li>
+            <li>list item 51</li>
+            <li>list item 61</li>
+        </ul>
+    </section>
+    <p class="land">Landwey is a landbanking and lifestyle infrastructure
+        company focused on strategic land development and the creation
+        of large scale,master planned communities designed for long term
+        capital appreciation
+    </p>
+</body>
+
+</html>

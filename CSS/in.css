@@ -1,0 +1,17 @@
+div{
+    width: 1000px;
+    line-height: 150%;
+    
+    margin: auto;
+    border :thin solid rgb(248, 106, 106);
+    background-color: #ffffff;
+    text-align:left ;
+    h1{
+        text-align: center;
+        color: rgb(43, 149, 211);
+    }
+    h4{
+        color: rgb(252, 65, 65);
+
+        }
+}

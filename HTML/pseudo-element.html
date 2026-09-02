@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        .lorem{
+            color: aqua;
+            font-size: 22px;
+
+        }
+        .lorem::first-letter{
+            font-size: 40px;
+            font-style: italic;
+            color: chocolate;
+            text-transform: capitalize;
+        }
+        .line::first-line{
+            font-size:30px ;
+            font-style: italic;
+            color: pink;
+            text-transform: capitalize;
+        }
+        .welcome,.goodbye{
+            font-size: 40px;
+            color: rebeccapurple;
+        }
+        .welcome::before{
+            content:"😐";
+        }
+        .goodbye::after{
+            content: "😀😎";
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            position: relative;
+
+        }
+        a::after{
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: blue;
+            transition: width 0.3s ease ;
+        }
+        a:hover::after{
+            width: 100%;
+        }
+        .card img{
+            position: relative;
+            width: 340px;
+
+        }
+        .card::after{
+            content: "View Profile";
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 20px;
+            width: 200px;
+            opacity: 0;
+            bottom: 0px;
+            transition: opacity 0.3s ease;
+
+        }
+        .card:hover::after{
+            opacity: 1.0;
+        }
+        [type = "text"]{
+            border: 3px solid red;
+        }
+        .spring{
+            padding: 14px 30px;
+            margin: 10px;
+            border: solid 2px black;
+            background: none;
+            position: relative;
+        }
+        .spring::after{
+            content: "";
+            background-color:black;
+            width: 0;
+            position: absolute;
+            
+            height: 45px;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: width 0.3s ease-in;
+        }
+        .spring:hover::after{
+            width: 100%;
+            color: white;
+        }
+        .spring:hover{
+           color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- before
+    after
+    first-line
+    first-letter
+     -->
+    <p class="lorem"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rerum corporis unde, aspernatur, aut saepe nihil laborum voluptate reiciendis maxime culpa eius asperiores? Alias deleniti aspernatur velit, nisi quas sequi.
+    Placeat eos obcaecati quo adipisci architecto, cumque id ad? Consectetur a enim vel, modi eos obcaecati magnam ducimus pariatur possimus, fugiat laboriosam maxime dignissimos blanditiis doloribus minima alias! Reprehenderit, tempore.
+    Consequatur architecto consectetur quis magnam enim, illum quod explicabo error aperiam excepturi nostrum nesciunt, quidem possimus nisi odit ut porro alias provident. Nam omnis consequuntur est asperiores, laborum optio alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia esse excepturi provident recusandae labore voluptatum, repellendus dolores nisi nostrum ut eum minus nulla ullam expedita alias repellat cumque illum atque!</p>
+    <p class="line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam dolore dignissimos nisi quibusdam architecto culpa quas debitis quam. Quasi tempore dolor at iusto pariatur numquam laboriosam, sequi quam. Molestiae.</p>
+    <h1 class="welcome">Welcome Back</h1>
+    <h1 class="goodbye">Goodbye</h1>
+    <a href="/HTML/in.html">Home</a>
+    <div class="card"><img class="card" src="netflix img.webp" alt=""></div>
+    <input type="text">
+    <input type="password">
+    <div>
+        <button class="spring">Why Spring?</button>
+        <button class="spring">Quickstart</button>
+    </div>
+    <!-- <div>
+        <button class="spring">Quickstart</button>
+    </div> -->
+</body>
+
+</html>

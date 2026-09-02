@@ -1,0 +1,471 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #1b0f0f;
+    color: #fff;
+    line-height: 1.7;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+section {
+    padding: 90px 8%;
+    padding-left: 30px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #170d0d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50px ;
+    background-color: #1b0f0f;
+    position: fixed;
+    right: 30px;
+    bottom: 45px;
+    border: gray solid 1px;
+    
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    color: #ddd;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.btn-small {
+    background: #ff4b4b;
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    color: #bbbbbb;
+    max-width: 520px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    background: #ff4b4b;
+    padding: 16px 38px;
+    border-radius: 40px;
+    font-weight: 700;
+}
+
+.hero-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    gap: 25px;
+    justify-content: center;
+}
+
+.box {
+    height: 180px;
+    border-radius: 22px;
+}
+
+.one {
+    background: #2ea6ff;
+
+}
+
+.hero-boxes img {
+    height: 170px;
+    width: auto;
+    padding: 5px;
+}
+
+.two {
+    background: #8b3dff;
+
+}
+
+.three {
+    background: #1bc98e;
+
+}
+
+/* =========================
+   FEATURED
+========================= */
+
+.featured h4 {
+    color: #cfcfcf;
+    margin-bottom: 30px;
+}
+
+.featured .co {
+    width: 80%;
+    margin: 20px auto;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    gap: 20px;
+
+    overflow-x: scroll;
+
+}
+
+.featured video {
+    width: 100%;
+    transition: 0.2s;
+}
+
+.case-text {
+    margin-top: 30px;
+
+    display: flex;
+
+}
+
+.tags {
+    width: 750px;
+    height: 250px;
+}
+
+
+
+.case-text h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tags span {
+    border: 1px solid #29c69a;
+    color: #29c69a;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.case-text p {
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.case-text a {
+    color: #ffd36b;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services h2 {
+    font-size: 48px;
+    margin: 15px 0 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.service-grid a {
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.service-grid ul {
+    padding-left: 20px;
+}
+
+.service-grid li {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   CLIENTS
+========================= */
+
+.clients {
+    display: flex;
+    column-gap: 50px;
+    justify-content: space-around;
+}
+
+.clients h2 {
+    font-size: 48px;
+    margin: 15px 0 40px;
+}
+
+.clients a {
+    color: #ffd36b;
+}
+
+
+.logos main {
+    display: flex;
+    column-gap: 50px;
+
+    padding-bottom: 50px;
+}
+
+.logos img {
+    height: 20px;
+    width: 100px;
+}
+
+/* =========================
+   AI SECTION
+========================= */
+
+.ai {
+    display: flex;
+
+
+
+}
+
+.ai video {
+    height: 500px;
+    width: 500px;
+    padding-right: 50px;
+}
+
+
+
+.ai h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.icon img {
+    width: 440px;
+    height: 450px;
+}
+
+.ai p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.ai a {
+    color: #ffd36b;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards h2 {
+
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #2a1818;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image {
+
+    background: #555;
+}
+
+.card h3 {
+    padding: 20px;
+}
+
+.card p {
+    padding: 0 20px 30px;
+    color: #bbb;
+}
+
+/* =========================
+   TESTIMONIAL
+========================= */
+
+.testimonial {
+    text-align: left;
+}
+
+.testimonial h2 {
+    max-width: 900px;
+    margin: auto;
+    font-size: 42px;
+}
+
+.testimonial p {
+    margin-top: 30px;
+    color: #ccc;
+}
+
+.testimonial a {
+    margin-top: 75px;
+    color: #ffd36b;
+    padding-left: 65px;
+}
+
+.testi {
+    display: flex;
+}
+
+/* =========================
+   RESOURCES
+========================= */
+
+.resources h2 {
+
+    font-size: 41px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 40px;
+
+}
+
+.resource-grid div {
+    background: #251515;
+    padding: 8px;
+    border-radius: 18px;
+    width: 400px;
+}
+
+.resource-grid p {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    color: #bbb;
+}
+
+.resource-grid a {
+
+    padding-bottom: 2px;
+    color: #ffd36b;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    background: #311818;
+    text-align: left;
+}
+
+.cta h2 {
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   SUBFOOTER
+========================= */
+
+
+.foot {
+    display: flex;
+    gap: 400px;
+}
+
+.foot h2 {
+    color: #888;
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.foot2 {
+    padding-top: 30px;
+
+    display: flex;
+    gap: 110px;
+}
+
+.foot2 main ul {
+    list-style: none;
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */

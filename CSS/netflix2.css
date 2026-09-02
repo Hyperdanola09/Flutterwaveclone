@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#background{
+   background: url(netflix.jpg);
+}
+.heade{
+    
+    color:
+#fff;
+width: 100%;
+margin:
+0px 0px -120px;
+padding:
+0px 148px;
+height: 120px;
+}
+.header{
+    width: 1071px;
+    height: 88px;
+    align-items:
+    
+center;
+color:
+#fff;
+display:
+inline-flex;
+flex-wrap:
+wrap;
+font-family:
+Netflix Sans;
+justify-content:
+space-between;
+margin: auto;
+/* margin:
+0px 0px 0px -16px; */
+}
+.div-img{
+    width: 341px;
+    height: 40px;
+    color:
+#fff;
+display:
+flex;
+flex-basis:
+calc(33.3333% - 16px);
+flex-wrap:
+wrap;
+margin:
+0px 0px 0px 16px;
+}
+.div-img img{
+    width: 148px;
+    height: 40px;
+}
+.div-sign{
+    width: 710px;
+    height: 38px;
+    color:
+#fff;
+display:
+flex;
+flex-wrap:
+wrap;
+justify-content:
+flex-end;
+margin:
+0px 0px 0px -12px;
+}
+.div-sign a{
+    width: 76px;
+    height: 32px;
+    align-items:
+center;
+background-color:
+#e50914;
+border-radius:
+4px;
+color:
+#fff;
+display:
+flex;
+fill:
+#fff;
+font-family:
+Netflix Sans;
+font-size:
+14px;
+font-weight:
+500;
+justify-content:
+center;
+line-height:
+14px;
+padding:
+4px 16px;
+}
+.body{
+    height: 513px;
+    color:
+#fff;
+display:
+flex;
+flex-direction:
+column;
+justify-content:
+center;
+margin:
+-32px 0px 0px;
+padding:
+0px 32px 32px;
+
+}
+.body h1{
+    color:
+#fff;
+font-family:
+Netflix Sans;
+font-size:
+56px;
+font-weight:
+700;
+line-height:
+70px;
+margin:
+0px 0px 16px ;
+text-align:
+center;
+}
+
+

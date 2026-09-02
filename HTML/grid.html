@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{ 
+            display: grid;
+            grid-template-columns: 200px 200px 200px 50px;
+            grid-template-rows: 500px 200px ;
+            
+            column-gap: 10px;
+            row-gap: 20px;
+
+        }
+        .card{
+            background-color: red;
+
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+            grid-template-rows: 300px 300px 300px;
+            gap: 20px;
+            width:51%;
+            margin: 10px auto 10px auto;
+        }
+        .container2{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: repeat(3,300px);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </main>
+    <section class="container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </section>
+    <section class="container2">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </section>
+    
+</body>
+</html>

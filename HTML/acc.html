@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .accord{
+            width: 80%;
+            
+            background: none;
+            border: none;
+        }
+        .netflix{
+            width: 100%;
+            height: 12vh;
+            background-color: #2d2d2d; 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px 0 10px;
+
+        }
+        img{
+            height: fit-content;
+            
+        }
+        .subnet{
+            background-color: #2d2d2d;
+            width: 100%;
+            height: 40vh;
+            border-top: 2px solid black;
+            padding: 0 10px 0 10px;
+            display: none;
+        }
+        .subnet p{
+            font-size: 24px;
+            color: white;
+            text-align: start;
+            margin-top: 10px;
+            line-height: 30px;
+            
+        }
+        p:last-child{
+            margin-top: 20px;
+        }
+        .accord:focus .subnet{
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <button class="accord">
+        <div class="netflix">
+          <h1>What is Netflix?</h1>
+          <img src="/image/face.jpeg" alt="">
+        </div>
+        <div class="subnet">
+            <p>
+                This is to certify that Tayo Ayoola was a bonafide and legitimate student of Valiants Havilah Schools.He is a well&nbsp;behaved,
+        responsible,diligent student and a focus student.He sat for his SSCE in WASSCE
+            </p>
+            <p>
+                This is to certify that Tayo Ayoola was a bonafide and legitimate student of Valiants Havilah Schools.He is a well&nbsp;behaved,
+        responsible,diligent student and a focus student.He sat for his SSCE in WASSCE
+            </p>
+        </div>
+    </button>
+</body>
+</html>

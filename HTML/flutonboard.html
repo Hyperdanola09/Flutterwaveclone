@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/image/Annotation 2026-08-31 195523.jpg">
+    <title>Flutterwave onboarding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .onboarding {
+            color:
+                #333;
+            font-size:
+                14px;
+            line-height:
+                16.1px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .onboardnav {
+            align-items:
+                center;
+            color:
+                #333;
+            display:
+                flex;
+            font-size:
+                14px;
+            gap:
+                32px;
+            justify-content:
+                space-between;
+            line-height:
+                16.1px;
+            padding:
+                20px 24px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .onboardimg {
+            width: 20%;
+            /* width: 20vw; */
+            height: 7vh;
+            color:
+                #333;
+            fill:
+                none;
+            font-size:
+                14px;
+            line-height:
+                16.1px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .indicate {
+            width: 70%;
+            /* width: 70vw; */
+            height: 3vh;
+            background-color:
+                #ff9b00;
+            border-radius:
+                4px 0px 0px 4px;
+            color:
+                #333;
+            /* flex-basis: */
+            /* 0%; */
+            /* font-size: */
+            /* 14px; */
+            /* line-height: */
+            /* 16.1px; */
+            /* text-shadow: */
+            /* #00000001 1px 1px 1px; */
+        }
+
+        .onboardimg2 {
+            margin: auto 0px;
+            width: 10%;
+            /* width: 10vw; */
+            height: 3vh;
+            color:
+                #333;
+            display:
+                inline;
+            fill:
+                none;
+            font-size:
+                14px;
+            line-height:
+                16.1px;
+        }
+
+        .onboardcontent {
+            /* width: 65%; */
+            width: 65vw;
+
+            color:
+                #333;
+            font-size:
+                14px;
+            line-height:
+                16.1px;
+            margin:
+                0px auto;
+            padding:
+                32px 32px 100px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .headerdiv {
+            width: 80%;
+            /* width: 80vw; */
+            color:
+                #333;
+            font-size:
+                14px;
+                
+            line-height:
+                16.1px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+            margin: auto;
+        }
+
+        h1 {
+            width: 100%;
+            /* width: 100vw; */
+            color:
+                #333;
+            font-family:
+                Moderat;
+            font-size:
+                32px;
+            font-weight:
+                700;
+            line-height:
+                32.2px;
+            margin:
+                0px 0px 8px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .headerdesc {
+            color:
+                #333;
+            font-family:
+                Moderat;
+            font-size:
+                14px;
+            line-height:
+                16.1px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .onboardform {
+            width: 100%;
+            /* width: 100vw; */
+            color:
+                #333;
+            display:
+                grid;
+            font-size:
+                14px;
+            gap:
+                24px 20px;
+            grid-template-columns:
+                31.3333px 31.3333px 31.3333px 31.3333px 31.3333px 31.3333px 31.3333px 31.3333px 31.3333px 31.3333px 31.3333px 31.3333px;
+            grid-template-rows:
+                100.333px 81px 361.396px 81px;
+            line-height:
+                16.1px;
+            margin:
+                32px 0px 0px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .onboardfields {
+            width: 80%;
+            /* width: 80vw; */
+            margin: auto;
+            margin-top: 32px;
+
+        }
+
+        .onboardfield {
+            /* width: 100%; */
+            margin: auto;
+            color:
+                #333;
+            font-size:
+                14px;
+            line-height:
+                16.1px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+                margin-top: 3vh;
+        }
+
+        .formlabel {
+            width: 80%;
+            /* width: 80vw; */
+            /* margin: auto; */
+            margin-top: 4vh;
+            color:
+                #333;
+            font-family:
+                Moderat;
+            font-size:
+                14px;
+            line-height:
+                19px;
+            padding:
+                4px 0px 8px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .seleinp {
+            width: 100%;
+            /* width: 100vw; */
+            height: 8vh;
+            align-items:
+                center;
+            background-color:
+                #fff;
+            border-color:
+                #e0e0e0;
+            border-radius:
+                4px;
+            border-style:
+                solid;
+            border-width:
+                0.666667px;
+            color:
+                #333;
+            font-size:
+                14px;
+            line-height:
+                19px;
+            padding:
+                14px 32px 14px 16px;
+                
+        }
+
+        .onboardfieldinfo {
+            color:
+                #828282;
+            font-family:
+                Moderat;
+            font-size:
+                12px;
+            line-height:
+                15px;
+            margin:
+                6px 0px 0px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .onboardfieldinfo a {
+            color:
+                #576ae6;
+            display:
+                inline;
+            font-family:
+                Moderat;
+            font-size:
+                12px;
+            line-height:
+                15px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .baseinput {
+            width: 100%;
+            /* width: 100vw; */
+            height: 8vh;
+            align-items:
+                center;
+            background-color:
+                #fff;
+            border-color:
+                #e0e0e0;
+            border-radius:
+                4px;
+            border-style:
+                solid;
+            border-width:
+                0.666667px;
+            color:
+                #333;
+            display:
+                flex;
+            font-size:
+                14px;
+            line-height:
+                19px;
+            padding:
+                12px 70px 11px 16px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .baseemail {
+            width: 100%;
+            /* width: 100vw; */
+            height: 4vh;
+            border-style: none;
+            font-family:
+                Moderat;
+            font-size:
+                14px;
+            line-height:
+                19px;
+        }
+
+        .rightanchor {
+            font-family: Moderat;
+            font-size: 14px;
+            background-color: #fff;
+            color: #576ae6;
+            line-height: 16.1px;
+            margin: 4px 0px 0px;
+            padding: 4px;
+            border-style: none;
+            text-align: right;
+            right: 0;
+        }
+
+        .selelabel {
+            width: 100%;
+            /* width: 100vw; */
+            margin: auto;
+            align-items:
+                center;
+            background-color:
+                #fff;
+            border-color:
+                #e0e0e0;
+            border-radius:
+                4px;
+            border-style:
+                solid;
+            border-width:
+                0.666667px;
+            color:
+                #333;
+            display:
+                flex;
+            font-family:
+                Moderat;
+            font-size:
+                14px;
+            line-height:
+                16.1px;
+            padding:
+                16px 0px 16px 16px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+        .altse{
+            margin-top: 3vh;
+        }
+
+        .seleitems {
+            width: 80%;
+            /* width: 100vw; */
+            background-color: red;
+            margin: auto;
+            margin-top: 20px;
+            /* align-items: */
+            /* center; */
+            color:
+                #333;
+            display:
+                flex;
+            flex-direction:
+                column;
+            font-size:
+                14px;
+            gap:
+                24px;
+            justify-content:
+                center;
+            line-height:
+                16.1px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .selelabel img {
+            width: 15%;
+            /* width: 15vw; */
+            height: 10vh;
+            box-shadow:
+                #00000080 0px 0px 10px 0px;
+            color:
+                #333;
+            font-size:
+                14px;
+            line-height:
+                16.1px;
+            margin:
+                0px 16px 0px 0px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .selecardtitle {
+            color:
+                #333;
+            font-size:
+                14px;
+            font-weight:
+                600;
+            line-height:
+                24.2px;
+            margin:
+                0px 0px 1px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+
+        .selecarddesc {
+            color:
+                #4f4f4f;
+            font-size:
+                14px;
+            line-height:
+                20px;
+            text-shadow:
+                #00000001 1px 1px 1px;
+        }
+        .textmuted{
+            color:
+#828282;
+display:
+inline;
+font-size:
+14px;
+line-height:
+19px;
+text-shadow:
+#00000001 1px 1px 1px;
+        }
+        .albut{
+            margin-top: 4vh;
+        }
+        .selebut{
+            width: 100%;
+            /* width: 100vw; */
+            background-color:
+#ffca7d;
+border-color:
+#0000;
+border-radius:
+4px;
+border-style:
+solid;
+border-width:
+0.666667px;
+color:
+#2d2d2d;
+display:
+inline-block;
+font-family:
+Moderat;
+font-size:
+18px;
+font-weight:
+500;
+letter-spacing:
+0.0024px;
+line-height:
+22px;
+padding:
+17px 32px;
+text-align:
+center;
+        }
+        .logtext{
+            color:
+#333;
+font-family:
+Moderat;
+font-size:
+14px;
+line-height:
+16.1px;
+margin:
+24px 0px 0px;
+text-align:
+center;
+text-shadow:
+#00000001 1px 1px 1px;
+        }
+        .logtext a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="onboarding">
+        <div class="onboardnav">
+            <img src="/image/FLUT.svg" alt="" class="onboardimg">
+            <div class="indicate"></div>
+            <img src="/image/download (3).svg" alt="" class="onboardimg2">
+        </div>
+        <div class="onboardcontent">
+            <!-- <div class="onboardform"> -->
+
+            <div class="headerdiv">
+                <h1>What kind of account would you like to create?</h1>
+                <p class="headerdesc">Choose the option that fits your organization</p>
+            </div>
+            <div class="onboardfields">
+                <div class="onboardfield">
+                    <p for="" class="formlabel">Country</p>
+                    <input name="" id="" class="seleinp" placeholder="Select country"></input>
+                    <p class="onboardfieldinfo">Can't find your country?<a href="">click here</a></p>
+                </div>
+                <div class="onboardfield">
+                    <p for="" class="formlabel">Enter a valid email address</p>
+                    <div class="baseinput">
+                        <input type="email" class="baseemail" placeholder="name@email.com">
+                        <button class="rightanchor">Verify</button>
+                    </div>
+                </div>
+                <!-- <p for="" class="formlabel">I am creating an account for:</p> -->
+                <p for="" class="formlabel">I am creating an account for:</p>
+                <div class="selelabel">
+                    <img src="/image/imgi_1_Non profit.svg" alt="">
+                    <div>
+                        <p class="selecardtitle">Individual Account</p>
+                        <p class="selecarddesc">Designed for unregistered businesses. Anyone selling, building, or
+                            offering services without a formal CAC registration.</p>
+                    </div>
+                </div>
+                <div class="selelabel altse">
+                    <img src="/image/imgi_1_Non profit.svg" alt="">
+                    <div>
+                        <p class="selecardtitle">Registered Business Account</p>
+                        <p class="selecarddesc">For CAC-registered businesses. Companies officially registered with the Corporate Affairs Commission and operating under formal structures.</p>
+                    </div>
+                </div>
+                <div class="selelabel altse">
+                    <img src="/image/imgi_1_Non profit.svg" alt="">
+                    <div>
+                        <p class="selecardtitle">Other Entities</p>
+                        <p class="selecarddesc">For Non-profits, Trusts, Religious Organisations</p>
+                    </div>
+                </div>
+                <div class="onboardfield">
+                    <p class="formlabel">Referral code <span class="textmuted">(optional)</span></p>
+                    <input name="" id="" class="seleinp" placeholder="Enter a referral code"></input>
+                </div>
+                <div class="onboardfield albut">
+                    <button class="selebut"><span>Let’s get started</span></button>
+                </div>
+                <p class="logtext">Already have an account? <a href="/HTML/flutlogin.html" target="_blank">Login here</a></p>
+            </div>
+            <!-- </div> -->
+        </div>
+
+    </div>
+
+</body>
+
+</html>

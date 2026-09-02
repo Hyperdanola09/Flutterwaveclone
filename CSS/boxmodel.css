@@ -1,0 +1,70 @@
+a{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    background-color:white;
+
+}
+h1,h2{
+    width: 100%;
+    height: 7vh;
+    background-color:wheat;
+    margin-top: 10px;
+}
+.box{
+    width: 100%;
+    background-color:greenyellow;
+}
+img{
+    width: 40%;
+    height: 40vh;
+}
+input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px; 
+}
+.background{
+    background-image: url(/Picture3.jpg);
+    height: 100vh;
+    width: 60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.back{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Picture3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+}
+.linear{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to left, blue, red, yellow);
+}
+.linear2{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to right, blue, red, yellow);
+}
+.linear3{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to bottom, blue, red, yellow);
+}
+.radial{
+    width: 100%;
+    height: 50vh;
+    background: radial-gradient(to )
+}
+.shadow{
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+    box-shadow: 5px 4px 10px black;
+}
