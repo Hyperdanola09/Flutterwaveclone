@@ -7,6 +7,8 @@
 /* #POPUP */
 .popup {
     position: sticky;
+    z-index: 50;
+    top: 0;
     width: 100%;
     background-color:
         #262c55;
@@ -84,6 +86,8 @@
 }
 
 /* HEADER */
+
+    
 header {
     width: 100%;
     font-family:
@@ -261,18 +265,21 @@ nav img {
 }
 
 .button1link {
-    align-items:
-        flex-start;
+    width: 100%;
+    /* align-items: */
+        /* flex-start; */
     display:
         flex;
     font-family:
         Moderat;
-    justify-content:
-        flex-start;
+        /* margin-bottom: 0.3vh; */
+    /* justify-content: */
+        /* flex-start; */
     line-height:
         22.4px;
     padding:
         10px 12px;
+        width: 100%;
 }
 
 
@@ -366,7 +373,7 @@ font-size:
 line-height:
 21px;
 padding:
-8px 12px;
+8px 6px;
 margin-top: 40px;
 }
 .qrimg{
@@ -375,15 +382,15 @@ margin-top: 40px;
 line-height:
 21px;
 margin:
-0px 12px 0px 0px;
-width: 40px;
-height: 40px;
+0px 5px 0px 0px;
+width: 6px;
+height: 6px;
 }
 .qrcont span{
     font-size:
-15px;
+10px;
 line-height:
-21px;
+12px;
 }
 .subcategory2{
     width: 260px;
@@ -704,6 +711,281 @@ nav .alta {
 }
 
 
+
+
+:root {
+      --orange: #f97316;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --banner: #0b1220;
+      --shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }*
+
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+      color: var(--text);
+      /* background: #f8fafc; */
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Top banner */
+    .banner {
+      background: var(--banner);
+      color: #fff;
+      font-size: 13px;
+      text-align: center;
+      padding: 10px 16px;
+    }
+    .banner a { color: #fff; text-decoration: underline; }
+
+    /* Main nav */
+    .nav {
+      background: #fff;
+      width: 100%;
+      border-bottom: 1px solid var(--border);
+      /* position: sticky; */
+      /* top: 0; */
+      /* z-index: 50; */
+    }
+
+    .nav-inner {
+      width: 90%;
+      margin: 0 auto;
+      height: 72px;
+      display: flex;
+      
+      justify-content: space-around;
+      align-items: center;
+      gap: 28px;
+      padding: 0 15px;
+    }
+
+    .nav-inner img {
+      /* display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 18px;
+      flex-shrink: 0; */
+      line-height:
+        22.4px;
+    width: 185px;
+    height: 44px;
+    }
+
+    /* .logo-mark {
+      width: 22px;
+      height: 22px;
+      border-radius: 7px;
+      background: linear-gradient(135deg, #fb7185, #f97316);
+    } */
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      /* margin-left: 12px; */
+    }
+
+    .nav-links > li { position: relative; }
+
+    .nav-links > li > a {
+      display: block;
+      padding: 0px 12px;
+      font-size: 14px;
+      color: #374151;
+      border-radius: 8px;
+    }
+
+    .nav-links > li:hover > a,
+    .nav-links > li > a:hover {
+      background: #f3f4f6;
+    }
+
+    
+    .nav-inner .alta {
+    align-items:
+        flex-start;
+    /* background-color: */
+        /* #eee; */
+    border-radius:
+        10px;
+    display:
+        flex;
+    font-family:
+        Moderat;
+    font-size:
+        14px;
+    justify-content:
+        flex-start;
+    line-height:
+        17px;
+    padding:
+        15px 50px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.alta::after {
+    content: "";
+    background-color: black;
+    border-radius: 10px;
+    width: 0;
+    position: absolute;
+
+    height: 45px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.1ms ease-in;
+}
+
+.alta:hover::after {
+    width: 100%;
+    color: white;
+}
+
+.alta:hover {
+    color: white;
+}
+.hiddim{
+    display: none;
+}
+
+    /* Shared dropdown panel */
+    .dropdown {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 12px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: 0.16s ease;
+      pointer-events: none;
+      min-width: 220px;
+    }
+
+    .nav-links > li:hover > .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    /* Small menus */
+    .dropdown.simple a {
+      display: block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      /* height: 100vh; */
+    }
+    .dropdown.simple .button1link{
+        display: flex;
+        padding: 10px 0px;
+    }
+    .ftr{
+        height: 80vh;
+    }
+    .dropdown.simple a:hover { background: #f3f4f6; }
+
+    /* Mega menu */
+    .dropdown.mega {
+      width: 600px;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 8px;
+      padding: 10px;
+    }
+
+    .cats a {
+      display: block;
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .cats a:hover,
+    .mega:has(.cat-1:hover) .cats .cat-1,
+    .mega:has(.cat-2:hover) .cats .cat-2 {
+      background: #f3f4f6;
+    }
+
+    .panels { position: relative; min-height: 380px;
+    display: flex; width:100px; }
+    .panel {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .panel.show-default,
+    .mega:has(.cat-1:hover) .panel-1,
+    .mega:has(.cat-2:hover) .panel-2 {
+      display: flex;
+    }
+    /* If nothing hovered yet, keep first panel visible while the menu is open */
+    .nav-links > li:hover .panel-1.show-default { display: flex; }
+    .mega:has(.cat-2:hover) .panel-1 { display: none; }
+
+    .item {
+      /* display: grid; */
+      display: flex;
+      /* grid-template-columns: 36px 1fr; */
+      /* gap: 10px; */
+      padding: 10px 12px;
+      border-radius: 12px;
+      justify-content: space-around;
+    }
+    .item:hover { background: #f8fafc; }
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-size: 16px;
+      background: #fff7ed;
+    }
+
+    .item h4 { font-size: 14px; font-weight: 600; }
+    .item p { font-size: 12px; color: var(--muted); line-height: 1.4; margin-top: 2px; }
+
+    .qr {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .qr-box {
+      width: 42px;
+      height: 42px;
+      background:
+        linear-gradient(#111 2px, transparent 2px) 0 0 / 8px 8px,
+        linear-gradient(90deg, #111 2px, transparent 2px) 0 0 / 8px 8px;
+      border: 2px solid #111;
+    }
+
+
 /* HERO */
 .hero {
     width: 100%;
@@ -879,6 +1161,7 @@ nav .alta {
         #1d1d1d;
     display:
         flex;
+        flex-wrap: wrap;
     justify-content:
         space-around;
     line-height:
@@ -896,6 +1179,9 @@ nav .alta {
 
 .customergridsection {
     width: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     color:
         #1d1d1d;
     line-height:
@@ -1951,6 +2237,7 @@ figcaption span {
 }
 
 .altstat {
+    width: 100%;
     color:
         #1d1d1d;
     line-height:
@@ -1961,6 +2248,7 @@ figcaption span {
 
 .statlist {
     width: 400px;
+    /* margin: auto; */
     height: 138px;
     align-items:
         flex-start;
@@ -1968,8 +2256,8 @@ figcaption span {
         #1d1d1d;
     display:
         flex;
-    flex-wrap:
-        wrap;
+    /* flex-wrap: */
+        /* wrap; */
     justify-content:
         space-between;
     line-height:
@@ -1994,7 +2282,7 @@ figcaption span {
     color: #1d1d1d;
     line-height: 22.4px;
     fill: none;
-    width: 700px;
+    width: 45%;
     /* width: 1000px; */
     height: 1106px;
     margin: 0;
@@ -2005,6 +2293,81 @@ figcaption span {
 
 
 }
+/* .globe {
+      --size: 420px;
+      width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0; */
+
+      /* dark oceans + map texture */
+      /* background-color: #0b1220;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/1280px-Earthmap1000x500compac.jpg");
+      background-repeat: repeat-x;
+      background-size: auto 100%;
+
+      
+      animation: spin-globe 28s linear infinite; */
+
+      /* sphere lighting */
+      /* box-shadow:
+        inset -28px 0 60px 8px rgba(0, 0, 0, 0.85),
+        inset 18px 8px 40px rgba(255, 255, 255, 0.08),
+        0 20px 50px rgba(0, 0, 0, 0.45);
+    } */
+
+    /* extra highlight + vignette on top of the map */
+    /* .globe::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 32% 38%,
+          rgba(255, 255, 255, 0.18) 0%,
+          transparent 42%),
+        radial-gradient(circle at 70% 60%,
+          transparent 40%,
+          rgba(0, 0, 0, 0.55) 100%);
+      pointer-events: none;
+    } */
+
+    /* thin meridians / orbit lines like the video */
+    /* .globe::after {
+      content: "";
+      position: absolute;
+      inset: -2%;
+      border-radius: 50%;
+      border: 1px solid rgba(200, 80, 70, 0.35);
+      box-shadow:
+        inset 0 0 0 1px rgba(180, 70, 60, 0.15);
+      pointer-events: none;
+    } */
+
+    /* small location marker */
+    /* .pin {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #e85d6c;
+      border-radius: 50%;
+      top: 42%;
+      left: 58%;
+      box-shadow: 0 0 10px 3px rgba(232, 93, 108, 0.7);
+      z-index: 2;
+    }
+
+    @keyframes spin-globe {
+      from { background-position: 0 0; }
+      to   { background-position: -1280px 0; } /* width of the map image */
+     */
+
+    /* pause on hover if you want */
+    /* .globe:hover {
+      animation-play-state: paused;
+    } */
 
 /* CL */
 .cl {
@@ -2320,7 +2683,7 @@ footer {
         /* wrap; */
     justify-content:
         space-between;
-        gap: 35%;
+        gap: 20%;
         
 
     line-height:
@@ -2412,7 +2775,7 @@ footer {
         flex-start;
     line-height:
         22.4px;
-        gap: 4%;
+        gap: 2%;
         text-align: start;
 }
 
@@ -2473,6 +2836,9 @@ footer {
     /* HEADER */
     nav{
         width: 95%;
+    }
+    .nav-links{
+        display: none;
     }
     .navlist{
         display: none;
@@ -2555,6 +2921,8 @@ footer {
     .commercegrid2{
         width: 100%;
         margin: 0px;
+        display: flex;
+        flex-wrap: wrap-reverse;
     }
     .loud{
         font-size: 50px;
@@ -2638,6 +3006,57 @@ footer {
     .iyim:focus .fnav1{
         display: block;
     }
-    
+    @media (max-width:750px){
+        /* HEADER */
+        .nav-inner{
+            width: 96%;
+            margin: 0px auto;
+            justify-content: space-between;
+        }
+        /* CUSTOMERS */
+        .sweet{
+            width: 94%;
+            margin: 1vh auto;
+            height: 800px;
+        }
+        .sweet2{
+            width: 90%;
+            margin: auto;
+        }
+        .customergridsection{
+            width: 100%;
+            margin: 3vh auto;
+            flex-wrap: wrap-reverse;
+        }
+        .customergridsectionmeta{
+            width: 94%;
+            margin: 2vh auto;
+        }
+        /* BUSINESS */
+        .businesses{
+            width: 95%;
+        }
+        .businesseslist{
+            justify-content: space-evenly;
+        }
+        /* PAYMENTS */
+        .payments{
+            padding: 0;
+        }
+        .container{
+            width: 95%;
+            margin:0px;
+        }
+        .h1{
+            width: 100%;
+        }
+        .feature{
+            width: 100%;
+        }
+        .featurealt{
+            width: 96%;
+        }
+
+    }
     
 }
