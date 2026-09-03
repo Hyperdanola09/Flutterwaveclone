@@ -2159,6 +2159,7 @@ figcaption span {
 
 .lightflex {
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -2167,9 +2168,11 @@ figcaption span {
         #1d1d1d;
     line-height:
         22.4px;
+        width: 45%;
 }
 
 .stat {
+    width: 100%;
     color:
         #1d1d1d;
     line-height:
@@ -2247,7 +2250,7 @@ figcaption span {
 }
 
 .statlist {
-    width: 400px;
+    width: 100%;
     /* margin: auto; */
     height: 138px;
     align-items:
@@ -2262,6 +2265,7 @@ figcaption span {
         space-between;
     line-height:
         22.4px;
+        margin-left: -70px;
 }
 
 .statlist li {
@@ -2679,8 +2683,8 @@ footer {
         #1d1d1d;
     display:
         flex;
-    /* flex-wrap: */
-        /* wrap; */
+    flex-wrap:
+        wrap;
     justify-content:
         space-between;
         gap: 20%;
@@ -2693,7 +2697,9 @@ footer {
         border-top: gray 0.2vh solid;
         border-bottom: gray 0.2vh solid;
 }
-
+.footgroup2 .sectionhead{
+    display: none;
+}
 .locationtoggler {
     align-items:
         center;
@@ -3055,6 +3061,51 @@ footer {
         }
         .featurealt{
             width: 96%;
+        }
+        /* GLOBAL */
+        .global{
+            margin-bottom: 0px;
+        }
+        .lightflex{
+            width: 100%;
+        }
+        .stats{
+            width: 100%;
+        }
+        .stat{
+            width: 45%;
+        }
+        .statlist{
+           display: flex;
+        }
+        .global img{
+            width: 85%;
+            margin:0px auto;
+            height: 800px;
+        }
+        /* FOOTER */
+        .navinl{
+            display: none;
+        }
+        .navinli2{
+            display: none;
+        }
+        .footgroup2{
+            border-top: none;
+            border-bottom: none;
+            padding: 0px;
+        }
+        .locationtoggler{
+            width: 100%;
+            border: #fff;
+            background-color: #fff;
+            margin-bottom: 3vh;
+        }
+        .footgroup2 .sectionhead{
+            display: block;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
         }
 
     }
