@@ -96,7 +96,7 @@ header {
         22.4px;
     padding:
         30px 20px 0px;
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
 nav {
@@ -760,8 +760,8 @@ nav .alta {
       
       justify-content: space-around;
       align-items: center;
-      gap: 28px;
-      padding: 0 15px;
+      gap: 10px;
+      padding: 0 0px;
     }
 
     .nav-inner img {
@@ -785,6 +785,7 @@ nav .alta {
     } */
 
     .nav-links {
+        
       list-style: none;
       display: flex;
       align-items: center;
@@ -2677,14 +2678,14 @@ footer {
 
 .footgroup2 {
     width: 100%;
-    /* align-items: */
-        /* center; */
+    align-items:
+        center;
     color:
         #1d1d1d;
     display:
         flex;
-    flex-wrap:
-        wrap;
+    /* flex-wrap: */
+        /* wrap; */
     justify-content:
         space-between;
         gap: 20%;
@@ -3012,7 +3013,10 @@ footer {
     .iyim:focus .fnav1{
         display: block;
     }
-    @media (max-width:750px){
+    
+    
+}
+@media (max-width:750px){
         /* HEADER */
         .nav-inner{
             width: 96%;
@@ -3023,11 +3027,11 @@ footer {
         .sweet{
             width: 94%;
             margin: 1vh auto;
-            height: 800px;
+            height: 40vh;
         }
         .sweet2{
             width: 90%;
-            margin: auto;
+            /* margin: auto; */
         }
         .customergridsection{
             width: 100%;
@@ -3037,6 +3041,7 @@ footer {
         .customergridsectionmeta{
             width: 94%;
             margin: 2vh auto;
+            .
         }
         /* BUSINESS */
         .businesses{
@@ -3083,6 +3088,10 @@ footer {
             margin:0px auto;
             height: 800px;
         }
+        .figure2 img{
+            width: 97%;
+
+        }
         /* FOOTER */
         .navinl{
             display: none;
@@ -3094,6 +3103,7 @@ footer {
             border-top: none;
             border-bottom: none;
             padding: 0px;
+            flex-wrap: wrap;
         }
         .locationtoggler{
             width: 100%;
@@ -3109,5 +3119,164 @@ footer {
         }
 
     }
-    
-}
+    @media (max-width:600px) {
+        /* POPUP */
+        .popup section{
+            padding: 0px;
+        }
+        .popupin{
+            width: 98%;
+            margin: auto;
+        }
+        .popbanner{
+            padding: 0px;
+        }
+        /* HERO */
+        .heroinfo h4{
+            width: 97%;
+            font-size: 50px;
+        }
+        .heroinfo .end{
+            font-size: 50px;
+        }
+        .heroctas{
+            width: 97%;
+            margin: auto;
+        }
+        .btnlabel{
+            font-weight: 100;
+            font-size: 10px;
+        }
+
+        /* CUSTOMERS */
+        .sweet{
+            height: 40vh;
+        }
+        /* COMMERCE */
+        .figure2 img{
+            display: none;
+        }
+        /* DARKSECTION */
+        .slidingcards{
+            width: 97%;
+            margin: auto;
+            color:
+#fff;
+display:
+flex;
+flex-wrap:
+wrap;
+justify-content:
+flex-start;
+line-height:
+22.4px;
+text-align:
+center;
+grid-template-columns: none;
+        }
+        .darkc{
+            width: 100%;
+            /* height: 240px; */
+            z-index: 0;
+            margin-bottom: 2vh;
+            padding: 20px 60px;
+            /* position: absolute; */
+        }
+        .darkc:hover{
+            z-index: 0;
+            transform: translateY(0px);
+            transform: translateX(0px);
+        }
+        .darkh1{
+            font-size: 40px;
+        }
+        .darkspan{
+            font-size: 40px;
+        }
+        .darkc{
+            padding: 5px 0px;
+        }
+        .darkc h6{
+            width: 98%;
+            margin: auto;
+        }
+        .darkc p{
+            width: 98%;
+            margin: auto;
+        }
+        
+    }
+    @media (max-width:340px) {
+        /* HEADER */
+        .nav{
+            display: none;
+        }
+        /* HERO */
+        .herowrapper{
+            width: 97%;
+            margin: auto;
+        }
+        .hero h4{
+            width: 96%;
+            font-size: 3rem;
+            /* margin: auto; */
+        }
+        .end{
+            font-size: 3rem;
+        }
+        .heroctas{
+            width: 96%;
+            margin: auto;
+        }
+        .ctabtn{
+            width: 40vw;
+            height: 5vh;
+        }
+        .ctabtn2{
+            width: 40vw;
+            height: 5vh;
+        }
+        /* CUSTOMERS */
+        .sweet{
+            height: 40vh;
+            width: 90vw;
+        }
+        /* PAYMENTS */
+        /* DARKSECTION */
+        .darkh1{
+            font-size: 40px;
+        }
+        .darkspan{
+            font-size: 40px;
+        }
+        .darkc{
+            padding: 5px 0px;
+        }
+        .darkc h6{
+            width: 98%;
+            margin: auto;
+        }
+        .darkc p{
+            width: 98%;
+            margin: auto;
+        }
+        /* LIGHTSECTION */
+        .lighth1{
+            font-size: 40px;
+        }
+        /* COMMERCE */
+        .commercegrid img{
+            width: 100%;
+            height: 60vh;
+            margin: auto;
+        }
+        .figure2 img{
+            display: block;
+            height: 45vh;
+            width: 96%;
+            margin: auto;
+        }
+
+        
+        
+    }
