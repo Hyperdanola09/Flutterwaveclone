@@ -3722,7 +3722,10 @@ footer {
 
     /* COMMERCE */
     .figure2 img {
-        display: none;
+        display: block;
+        margin: 0px auto;
+        width: 90%;
+
     }
 
     /* DARKSECTION */
