@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-Flutterwave for business</title>
     <link rel="stylesheet" href="/CSS/bootstrap.min.css">
-    <link rel="shortcut icon" href="/image/Annotation 2026-08-31 195523.jpg">
+    <link rel="shortcut icon" href="/image/9C7jW.png">
     <style>
-        body{
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        body {
             position: relative;
         }
-        header{
+
+        header {
             width: 100%;
         }
-        .accounthead{
+
+        .accounthead {
             width: 90%;
             margin: auto;
             color: #333;
@@ -25,11 +33,13 @@
             text-shadow: #00000001 1px 1px 1px;
 
         }
-        .accounthead img{
+
+        .accounthead img {
             width: 185px;
             height: 30px;
         }
-        .accounthead a{
+
+        .accounthead a {
             width: 132px;
             /* height: 3vh; */
             height: 32px;
@@ -50,7 +60,8 @@
             text-shadow: #00000001 1px 1px 1px;
             text-decoration: none;
         }
-        .form{
+
+        .form {
             margin-top: 18vh;
             height: 323px;
             width: 343px;
@@ -58,9 +69,10 @@
             padding: 2%;
             background-color: antiquewhite;
             border-radius: 10px;
-            
+
         }
-        .formtitle{
+
+        .formtitle {
             width: 85%;
             color: #333;
             font-family: Moderat;
@@ -72,7 +84,8 @@
             margin-right: auto;
             text-shadow: #00000001 1px 1px 1px;
         }
-        .form .divalt{
+
+        .form .divalt {
             width: 85%;
             margin: auto;
             align-items: center;
@@ -91,7 +104,8 @@
             margin-bottom: 3vh;
 
         }
-        .baseinp{
+
+        .baseinp {
             width: 100%;
             border: none;
             border-style: none;
@@ -99,7 +113,8 @@
             font-size: 14px;
             line-height: 19px;
         }
-        .form button{
+
+        .form button {
             width: 100%;
             margin: 2vh auto;
             /* display: block; */
@@ -118,7 +133,8 @@
             padding: 14px;
             text-align: center;
         }
-        .formitem{
+
+        .formitem {
             width: 85%;
             margin: auto;
             color: #333;
@@ -127,7 +143,8 @@
             text-shadow: #00000001 1px 1px 1px;
 
         }
-        .formitem a{
+
+        .formitem a {
             color: #576ae6;
             display: inline;
             font-family: Moderat;
@@ -136,7 +153,8 @@
             text-shadow: #00000001 1px 1px 1px;
             text-decoration: none;
         }
-        footer{
+
+        footer {
             width: 95%;
             margin: auto;
             align-items: center;
@@ -148,7 +166,8 @@
             padding: 0px 5px;
             text-shadow: #00000001 1px 1px 1px;
         }
-        footer .fo2{
+
+        footer .fo2 {
             width: 25%;
             color: #333;
             font-size: 14px;
@@ -159,7 +178,8 @@
             justify-content: space-around;
             gap: 4%;
         }
-        .footersp{
+
+        .footersp {
             text-decoration: none;
             color: #333;
             display: inline;
@@ -168,7 +188,8 @@
             line-height: 16.1px;
             text-shadow: #00000001 1px 1px 1px;
         }
-        .fo1{
+
+        .fo1 {
             width: 55%;
             color: #333;
             font-size: 14px;
@@ -176,7 +197,8 @@
             padding: 32px 25px;
             text-shadow: #00000001 1px 1px 1px;
         }
-        .relimg{
+
+        .relimg {
             text-align: center;
             justify-content: center;
             align-items: center;
@@ -192,23 +214,108 @@
             border-radius: 50px;
             background-color: #ff9b00;
         }
-        .relimg img{
+
+        .relimg img {
             text-align: center;
             align-items: center;
             justify-content: center;
             width: 55%;
             height: 100%;
             margin: auto;
-            
+
+        }
+
+        @media (max-width: 900px) {
+            .accounthead {
+                width: 100%;
+                padding: 16px;
+                gap: 12px;
+            }
+
+            .accounthead img {
+                width: 130px;
+                height: auto;
+            }
+
+            .accounthead a {
+                width: auto;
+                min-width: 0;
+                padding: 8px 12px;
+                white-space: nowrap;
+            }
+
+            .form {
+                width: 92%;
+                max-width: 343px;
+                height: auto;
+                margin: 48px auto 40px;
+                padding: 20px 16px;
+            }
+
+            .formtitle,
+            .form .divalt,
+            .formitem {
+                width: 100%;
+            }
+
+            .form .divalt {
+                height: auto;
+                margin-bottom: 16px;
+            }
+
+            .form button {
+                width: 100%;
+                margin: 8px 0 16px;
+            }
+
+            footer {
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+                padding: 16px;
+            }
+
+            .fo1,
+            footer .fo2 {
+                width: 100%;
+                padding: 0;
+            }
+
+            footer .fo2 {
+                flex-direction: column;
+                gap: 8px;
+                justify-content: flex-start;
+            }
+
+            .relimg {
+                position: fixed;
+                right: 16px;
+                left: auto;
+                bottom: 16px;
+                width: 56px;
+                height: 56px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .accounthead img {
+                width: 110px;
+            }
+
+            .formtitle {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
-    <div class="accounthead">
-        <img src="/image/FLUT.svg" alt="">
-        <a href="/HTML/flutonboard.html">Create Account</a>
-    </div>
+        <div class="accounthead">
+            <img src="/image/FLUT.svg" alt="">
+            <a href="/HTML/flutonboard.html">Create Account</a>
+        </div>
     </header>
     <div class="form">
         <h1 class="formtitle">Login to your account</h1>
@@ -216,10 +323,11 @@
         <div class="divalt"><input type="password" placeholder="Password" class="baseinp"></div>
         <button>Login</button>
         <div class="formitem"><a href="">Forgot Password?</a></div>
-        
+
     </div>
     <footer>
-        <div class="fo1"><span class="footersp"> Flutterwave Technology Solutions Limited.Licensed by the Central Bank of Nigeria.</span></div>
+        <div class="fo1"><span class="footersp"> Flutterwave Technology Solutions Limited.Licensed by the Central Bank
+                of Nigeria.</span></div>
         <div class="fo2">
             <a href="" class="footersp">Privacy Policy</a>
             <a href="" class="footersp">Terms and conditions</a>
@@ -227,4 +335,5 @@
     </footer>
     <div class="relimg"><img src="/image/chat-left-text (1).svg" alt=""></div>
 </body>
+
 </html>
