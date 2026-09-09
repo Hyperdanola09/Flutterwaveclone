@@ -101,7 +101,7 @@ header {
         22.4px;
     padding:
         30px 20px 0px;
-    padding-top: 5vh;
+    padding-top: 20px;
 }
 
 nav {
@@ -942,7 +942,7 @@ a {
 }
 
 .ftr {
-    height: 80vh;
+    height: 480px;
 }
 
 .dropdown.simple a:hover {
@@ -952,7 +952,7 @@ a {
 /* Mega menu */
 .dropdown.mega {
     width: 600px;
-    height: 100vh;
+    height: 490px;
     display: grid;
     grid-template-columns: 170px 1fr;
     gap: 8px;
