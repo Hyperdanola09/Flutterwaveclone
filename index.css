@@ -897,6 +897,57 @@ a {
 .alta:hover {
     color: white;
 }
+.drt{
+    display: none;
+}
+.nav-inner .drt {
+    align-items:
+        center;
+    /* background-color: */
+    /* #eee; */
+    border-radius:
+        10px;
+        text-align: center;
+    /* display: */
+        /* flex; */
+    font-family:
+        Moderat;
+    font-size:
+        14px;
+    justify-content:
+        flex-start;
+    line-height:
+        17px;
+    padding:
+        15px auto;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.drt::after {
+    content: "";
+    background-color: black;
+    border-radius: 10px;
+    width: 0;
+    position: absolute;
+
+    height: 45px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.1ms ease-in;
+}
+
+.drt:hover::after {
+    width: 100%;
+    color: white;
+}
+
+.drt:hover {
+    color: white;
+}
 
 .hiddim {
     display: none;
@@ -3046,6 +3097,9 @@ footer {
         width: 28px;
         height: 28px;
         cursor: pointer;
+    }
+    .drt{
+        display: block;
     }
 
     .alta {
